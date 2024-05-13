@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <!--   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<script>
+    function IniciarJogo(){
+      var nivel = (document.getElementById('nivel').value) 
+    if(nivel ===  '')
+        alert('coloque um valor ')
+     
+  window.location.href = 'index.html?' + nivel
+   
+}
+    
+</script>
+</head>
+<body>
+    <div id="container">
+        <div class=" row"> 
+            <div class="cool">
+                <div class="d-flex justify-content-center">
+                <img src="imagens/game.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class=" row"  class="button-nivel"> 
+            <div class="cool">
+                <div class="d-flex justify-content-center">
+                    <div class="mb-2" class="button-nivel">
+                        <select class="form-control" id="nivel">
+                        <option value="">selecione o Nível</option>
+                        <option value="normal">Normal</option>
+                        <option value="dificil">Dificil</option>
+                        <option value="chucknorris">chuck Norris</option>
+                                        </select>
+                    </div>
+        <div class=" row"> 
+            <div class="cool">
+                <div class="d-flex justify-content-center">
+                <button onclick="IniciarJogo()" type="button" class="btn btn-danger btn-lg">Iniciar jogo</button >
+                </div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
